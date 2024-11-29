@@ -3,83 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ranjita - Web Developer</title>
-    <link
-      rel="stylesheet"
-      href="https://ranjita225254.github.io/web-developer/style.css"
-    />
+    <title>Ranjita Gupta - Web Development Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#10B981",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <body class="font-sans bg-gray-100">
+    <header class="bg-white shadow-md">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold text-primary">Ranjita Gupta</div>
+          <div class="hidden md:flex space-x-6">
+            <a href="#home" class="text-gray-700 hover:text-primary">Home</a>
+            <a href="#services" class="text-gray-700 hover:text-primary"
+              >Services</a
+            >
+            <a href="#contact" class="text-gray-700 hover:text-primary"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-gray-700" aria-label="Toggle menu">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section id="home">
-        <h1>John Doe</h1>
-        <h2>Web Developer</h2>
-        <p>
-          Crafting beautiful and functional websites for businesses and
-          individuals
-        </p>
+      <section
+        id="home"
+        class="bg-gradient-to-r from-primary to-secondary text-white py-20"
+      >
+        <div class="container mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Web Development Excellence
+          </h1>
+          <p class="text-xl mb-8">
+            Crafting beautiful and functional websites for businesses and
+            individuals
+          </p>
+          <a
+            href="#contact"
+            class="bg-white text-primary font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300"
+            >Get in Touch</a
+          >
+        </div>
       </section>
 
-      <section id="services">
-        <h2>My Services</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <i data-lucide="code"></i>
-            <h3>Web Development</h3>
-            <p>
-              Custom websites built from scratch to meet your specific needs
-            </p>
-          </div>
-          <div class="service-card">
-            <i data-lucide="layout"></i>
-            <h3>Responsive Design</h3>
-            <p>
-              Websites that look great on all devices, from mobile to desktop
-            </p>
-          </div>
-          <div class="service-card">
-            <i data-lucide="shopping-cart"></i>
-            <h3>E-commerce Solutions</h3>
-            <p>
-              Online stores with secure payment gateways and inventory
-              management
-            </p>
+      <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-12">My Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
+            >
+              <i
+                data-lucide="code"
+                class="text-primary w-12 h-12 mx-auto mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                Custom Web Development
+              </h3>
+              <p class="text-gray-600 text-center">
+                Tailored websites built from scratch to meet your specific needs
+                and goals.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
+            >
+              <i
+                data-lucide="smartphone"
+                class="text-primary w-12 h-12 mx-auto mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                Responsive Design
+              </h3>
+              <p class="text-gray-600 text-center">
+                Ensure your website looks great and functions flawlessly on all
+                devices.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
+            >
+              <i
+                data-lucide="shopping-cart"
+                class="text-primary w-12 h-12 mx-auto mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                E-commerce Solutions
+              </h3>
+              <p class="text-gray-600 text-center">
+                Build online stores with secure payment gateways and inventory
+                management.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
+            >
+              <i
+                data-lucide="bar-chart"
+                class="text-primary w-12 h-12 mx-auto mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                SEO Optimization
+              </h3>
+              <p class="text-gray-600 text-center">
+                Improve your website's visibility in search engines and attract
+                more visitors.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
+            >
+              <i
+                data-lucide="refresh-cw"
+                class="text-primary w-12 h-12 mx-auto mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                Website Maintenance
+              </h3>
+              <p class="text-gray-600 text-center">
+                Keep your website up-to-date, secure, and running smoothly with
+                regular maintenance.
+              </p>
+            </div>
+            <div
+              class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300"
+            >
+              <i
+                data-lucide="zap"
+                class="text-primary w-12 h-12 mx-auto mb-4"
+              ></i>
+              <h3 class="text-xl font-semibold mb-2 text-center">
+                Performance Optimization
+              </h3>
+              <p class="text-gray-600 text-center">
+                Enhance your website's speed and efficiency for a better user
+                experience.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-          <img src="/placeholder.svg?height=200&width=300" alt="Project 1" />
-          <img src="/placeholder.svg?height=200&width=300" alt="Project 2" />
-          <img src="/placeholder.svg?height=200&width=300" alt="Project 3" />
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-          <i data-lucide="mail"></i>
-          <a href="mailto:ranjita225254@gmail.com">ranjita225254@gmail.com</a>
+      <section id="contact" class="bg-gray-200 py-20">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+          <div class="max-w-md mx-auto bg-white rounded-lg shadow-md p-8">
+            <p class="text-center mb-6">
+              Ready to start your project? Have any questions? Feel free to
+              reach out!
+            </p>
+            <div class="flex items-center justify-center">
+              <i data-lucide="mail" class="text-primary w-6 h-6 mr-2"></i>
+              <a
+                href="mailto:ranjita225254@gmail.com"
+                class="text-primary hover:underline"
+                >ranjita225254@gmail.com</a
+              >
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2023 John Doe. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2023 Ranjita Gupta. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="hover:text-primary"
+            ><i data-lucide="linkedin"></i
+            ><span class="sr-only">LinkedIn</span></a
+          >
+          <a href="#" class="hover:text-primary"
+            ><i data-lucide="github"></i><span class="sr-only">GitHub</span></a
+          >
+          <a href="#" class="hover:text-primary"
+            ><i data-lucide="twitter"></i
+            ><span class="sr-only">Twitter</span></a
+          >
+        </div>
+      </div>
     </footer>
 
     <script>
